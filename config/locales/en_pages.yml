@@ -1,0 +1,18 @@
+en:
+  activerecord:
+    attributes:
+      'spree/page':
+        title: Title
+        body: Body
+        visible: Visible
+        image: Image
+        meta_keywords: Meta Keywords
+        meta_description: Meta Description
+  spree:
+    admin:
+      tab:
+        pages: "Pages"
+    new_page: "New Page"
+    listing_pages: "Listing Pages"
+    editing_page: "Editing Page"
+    back_to_pages_list: "Back to Pages list"
