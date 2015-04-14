@@ -9,7 +9,7 @@ Installation
 Add spree_static_pages to your Gemfile:
 
 ```ruby
-gem 'spree_static_pages'
+gem 'spree_static_pages', github: 'freego/spree_static_pages', branch: 'X-X-stable'
 ```
 
 Bundle your dependencies and run the installation generator:
