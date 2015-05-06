@@ -1,2 +1,0 @@
-<!-- insert_bottom "[data-hook='admin_tabs']" -->
-<%= tab(:pages, icon: 'file-text-o') %>

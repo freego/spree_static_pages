@@ -1,38 +1,38 @@
 <div data-hook="admin_page_form_fields" class="row">
-  <div class="twelve columns">
+  <div class="col-md-6">
     <%= f.field_container :title do %>
       <%= f.label :title, t(:title, scope: 'activerecord.attributes.spree/page') %>
-      <%= f.text_field :title, class: 'fullwidth' %>
+      <%= f.text_field :title, class: 'form-control' %>
       <%= error_message_on :page, :title %>
     <% end %>
 
-    <%= f.field_container :body do %>
+    <%= f.field_container :body, class: ['form-group'] do %>
       <%= f.label :body, t(:body, scope: 'activerecord.attributes.spree/page') %>
-      <%= f.text_area :body, class: 'fullwidth' %>
+      <%= f.text_area :body, class: 'form-control' %>
       <%= error_message_on :page, :body %>
     <% end %>
 
-    <%= f.field_container :visible do %>
+    <%= f.field_container :visible, class: ['form-group'] do %>
       <%= f.label :visible, t(:visible, scope: 'activerecord.attributes.spree/page') %>
-      <%= f.check_box :visible, class: 'fullwidth' %>
+      <%= f.check_box :visible, class: 'form-control' %>
       <%= error_message_on :page, :visible %>
     <% end %>
 
-    <%= f.field_container :meta_keywords do %>
+    <%= f.field_container :meta_keywords, class: ['form-group'] do %>
       <%= f.label :meta_keywords, t(:meta_keywords, scope: 'activerecord.attributes.spree/page') %>
-      <%= f.text_field :meta_keywords, class: 'fullwidth' %>
+      <%= f.text_field :meta_keywords, class: 'form-control' %>
       <%= error_message_on :page, :meta_keywords %>
     <% end %>
 
-    <%= f.field_container :meta_description do %>
+    <%= f.field_container :meta_description, class: ['form-group'] do %>
       <%= f.label :meta_description, t(:meta_description, scope: 'activerecord.attributes.spree/page') %>
-      <%= f.text_field :meta_description, class: 'fullwidth' %>
+      <%= f.text_field :meta_description, class: 'form-control' %>
       <%= error_message_on :page, :meta_description %>
     <% end %>
 
-    <%= f.field_container :image do %>
+    <%= f.field_container :image, class: ['form-group'] do %>
       <%= f.label :image, t(:image, scope: 'activerecord.attributes.spree/page') %>
-      <%= f.file_field :image, class: 'fullwidth' %>
+      <%= f.file_field :image, class: 'form-control' %>
       <%= error_message_on :page, :image %>
       <% if f.object.image_file_name %>
         <br><br>
@@ -40,7 +40,7 @@
       <% end %>
     <% end %>
 
-    <%= f.field_container :page_section_id do %>
+    <%= f.field_container :page_section_id, class: ['form-group'] do %>
       <%= f.label :page_section_id, t(:page_section, scope: 'activerecord.attributes.spree/page') %>
       <%= f.collection_select :page_section_id, Spree::PageSection.all, :id, :name %>
       <%= error_message_on :page, :page_section_id %>
