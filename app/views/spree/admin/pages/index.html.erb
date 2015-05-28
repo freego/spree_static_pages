@@ -9,7 +9,7 @@
 <table class="table sortable" id="listing_pages" data-hook data-sortable-link="<%= update_positions_admin_pages_url %>">
   <thead>
     <tr data-hook="admin_pages_index_headers">
-      <th class="no-border"></td>
+      <th class="no-border"></th>
       <th><%= t(:title, scope: 'activerecord.attributes.spree/page') %></th>
       <th data-hook="admin_pages_index_header_actions" class="actions"></th>
     </tr>
@@ -17,7 +17,7 @@
   <tbody>
     <% @pages.each do |page| %>
       <tr id="<%= spree_dom_id page %>" data-hook="admin_pages_index_rows" class="<%= cycle('odd', 'even')%>">
-        <td class="no-border"><span class="handle"></span></td>
+        <td class="move-handle"><span class="icon icon-move handle"></span></td>
         <td><%= link_to page.title, edit_object_url(page) %></td>
         <td data-hook="admin_pages_index_row_actions" class="actions text-right">
           <%= link_to_edit page, no_text: true %>
