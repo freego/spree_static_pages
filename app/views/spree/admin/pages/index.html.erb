@@ -21,6 +21,7 @@
         <td><%= link_to page.title, edit_object_url(page) %></td>
         <td data-hook="admin_pages_index_row_actions" class="actions text-right">
           <%= link_to_edit page, no_text: true %>
+          <%= link_to_with_icon("eye-open", Spree.t(:page_preview), page_path(page), class: "btn btn-primary btn-sm", no_text: true, target: "_blank") %>
           <%= link_to_delete page, no_text: true %>
         </td>
       </tr>
