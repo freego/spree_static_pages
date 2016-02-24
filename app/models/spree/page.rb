@@ -1,5 +1,5 @@
 module Spree
-  class Page < ActiveRecord::Base
+  class Page < Spree::Base
     extend FriendlyId
     friendly_id :slug_candidates, use: [:slugged, :finders]
 
